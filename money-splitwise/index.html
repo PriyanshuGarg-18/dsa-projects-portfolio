@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,5 +55,29 @@
       <h2 class="text-xl mb-4 font-semibold">Enter the transaction details</h2>
 
       <div class="space-x-2">
-        <input id="first"   class="bg-gray-200 px-4 py-2 rounded-lg focus:outline-none"
-               typ
+        <input id="first" class="bg-gray-200 px-4 py-2 rounded-lg focus:outline-none" type="text"
+          placeholder="Payer ID">
+        <input id="second" class="bg-gray-200 px-4 py-2 rounded-lg focus:outline-none" type="text"
+          placeholder="Payee ID">
+        <input id="amount" class="bg-gray-200 px-4 py-2 rounded-lg focus:outline-none" type="number"
+          placeholder="Amount">
+      </div>
+
+      <div class="space-x-4 mt-6">
+        <button id="generate-graph" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700">
+          Submit
+        </button>
+        <button id="solve" class="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+          Solve
+        </button>
+        <button id="reset" class="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700">
+          Reset
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
