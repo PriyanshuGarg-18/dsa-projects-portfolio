@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Money Splitwise</title>
+
+  <!-- Tailwind for quick styling -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Optional local styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+
+<body class="font-roboto">
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="bg-white shadow p-4 flex flex-wrap items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="../assets/money-splitwise.png" alt="Money Splitwise" class="w-10 h-10 rounded-full">
+      <h1 class="text-2xl font-semibold">Money Splitwise</h1>
+    </div>
+
+    <nav class="flex flex-wrap space-x-4 text-gray-700">
+      <a class="hover:text-black" href="../text-editor/index.html">Text Editor</a>
+      <a class="hover:text-black" href="../file-compressor/index.html">File Compressor</a>
+      <a class="hover:text-black" href="../contact-search/index.html">Contact Search</a>
+      <a class="hover:text-black" href="../whatsapp-list/index.html">WhatsApp List</a>
+    </nav>
+
+    <a href="../index.html" class="px-4 py-2 rounded bg-gray-200 hover:bg-gray-300">
+      Home
+    </a>
+  </header>
+
+  <!-- ===== Graph + input zone ===== -->
+  <main class="max-w-5xl mx-auto p-4">
+
+    <!-- Vis.js graph containers -->
+    <div id="container" class="w-full">
+      <div id="mynetwork" class="h-72 border mb-6"></div>
+
+      <div id="container2" class="mt-6">
+        <span id="temptext" class="block text-center text-xl"></span>
+        <div id="mynetwork2" style="display:none" class="h-60 border"></div>
+      </div>
+    </div>
+
+    <!-- Input form -->
+    <section class="text-center mt-10">
+      <h2 class="text-xl mb-4 font-semibold">Enter the transaction details</h2>
+
+      <div class="space-x-2">
+        <input id="first"   class="bg-gray-200 px-4 py-2 rounded-lg focus:outline-none"
+               typ
