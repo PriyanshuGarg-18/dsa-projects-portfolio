@@ -54,28 +54,28 @@
             </a>
         </div>
     </header>
-
-    <!-- Graph Area -->
     <div id="container">
-        <div id="mynetwork"></div>
-        <div id="container2">
-            <span id="temptext" class="text-center text-xl w-full mt-4">Optimized Transactions Will Appear Here</span>
-            <div id="mynetwork2" style="display:none"></div>
-        </div>
+      <div id="mynetwork"></div>
+      <div id="container2">
+        <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+    
+        </span>
+        <div id="mynetwork2" style="display: none"></div>
+      </div>
     </div>
-
-    <!-- Input Section -->
-    <section class="text-center py-6">
-        <p class="text-lg mb-2 font-semibold text-gray-800">Enter the Transaction Details</p>
-        <input id="first"  type="text" placeholder="Enter the First Person id" class="input-field" />
-        <input id="second" type="text" placeholder="Enter the Second Person id" class="input-field" />
-        <input id="amount" type="text" placeholder="Enter the Amount" class="input-field" />
-        <div class="mt-4">
-            <button id="generate-graph" class="action-btn">Submit</button>
-            <button id="solve"          class="action-btn">Solve</button>
-            <button id="reset"          class="action-btn">Reset</button>
-        </div>
-    </section>
+    <div>
+      <br>
+      <center><p>Enter the Transaction Details</p></center>
+      <center> 
+      <input type='text' id="first" placeholder="Enter the First Person id" class="bg-gray-400 mt-6 mb-6 px-4 py-1 mx-1 border rounded-lg text-gray-700 focus:border-green-500" />
+      <input type='text' id="second" placeholder="Enter the Second Person id" class="bg-gray-400 mt-6 mb-6 px-4 py-1 mx-1 border rounded-lg text-gray-700 focus:border-green-500" />
+      <input type='text' id="amount" placeholder="Enter the Amount" class="bg-gray-400 mt-6 mb-6 px-4 py-1 mx-1 border rounded-lg text-gray-700 focus:border-green-500" /></center>
+      <center><button type="button" class="bg-green-500 text-gray-100 rounded hover:bg-green-400 px-4 py-2 focus:outline-none" id="generate-graph">Submit</button>
+      <br>
+      <button type="button" class="bg-green-500 text-gray-100 rounded hover:bg-green-400 px-4 py-2 focus:outline-none" id="solve">Solve</button>
+      <br>
+      <button type="button" class="bg-green-500 text-gray-100 rounded hover:bg-green-400 px-4 py-2 focus:outline-none" id="reset">Reset</button></center>
+  </div>
 
     <!-- original script block unchanged -->
     <script src="index.js"></script>
