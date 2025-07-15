@@ -1,62 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" style="font-size:16px">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Art of Data Structures and Algorithms</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Art of Data Structures and Algorithms</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet" />
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@700&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+  <!-- Minimal own CSS -->
+  <link rel="stylesheet" href="styles/home.css" />
 
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="styles/main.css" />
+  <style>
+    /* quick fallback if home.css hasn’t loaded yet */
+    h1,h2,h3,h4,h5,h6 {font-family:'Anton',sans-serif;margin:0}
+    p                 {font-family:'Yanone Kaffeesatz',sans-serif;margin:0}
+    a                 {text-decoration:none;color:inherit}
+    body              {margin:0;background:#fff}
+    header            {text-align:center;padding:3rem 1rem}
+    .grid             {display:grid;gap:2rem;padding:0 2rem 4rem;
+                       grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card             {background:#000;border-radius:1.5rem;box-shadow:0 6px 18px rgba(0,0,0,.25);
+                       transition:.25s}
+    .card:hover       {transform:translateY(-8px);box-shadow:0 12px 28px rgba(0,0,0,.35)}
+    .card img         {width:75%;margin:2rem auto 1rem;display:block}
+    .card p           {color:#fff;font-size:1.15rem;text-align:center;padding-bottom:2rem}
+  </style>
 </head>
 
 <body>
-    <h1>THE ART OF DATA STRUCTURES AND ALGORITHMS</h1>
+  <header>
+    <h1 class="w3-jumbo">THE ART OF DATA STRUCTURES AND ALGORITHMS</h1>
+  </header>
 
-    <section class="grid">
-        <!-- 1 ▸ Text Editor -->
-        <a href="text-editor/index.html" class="card">
-            <img src="assets/text-editor.png" alt="Text Editor" />
-            <span>Text Editor</span>
-        </a>
+  <section class="grid">
 
-        <!-- 2 ▸ File Compressor -->
-        <a href="file-compressor/index.html" class="card">
-            <img src="assets/file-compressor.png" alt="File Compressor" />
-            <span>File Compressor</span>
-        </a>
+    <!-- 1 Text Editor -->
+    <a class="card" href="text-editor/index.html">
+      <img src="assets/text-editor.png" alt="Text Editor">
+      <p>Text Editor</p>
+    </a>
 
-        <!-- 3 ▸ Contact List Search -->
-        <a href="contact-search/index.html" class="card">
-            <img src="assets/contact-search.png" alt="Contact List Search" />
-            <span>Contact List Search</span>
-        </a>
+    <!-- 2 File Compressor -->
+    <a class="card" href="file-compressor/index.html">
+      <img src="assets/file-compressor.png" alt="File Compressor">
+      <p>File Compressor</p>
+    </a>
 
-        <!-- 4 ▸ WhatsApp Chat List -->
-        <a href="whatsapp-list/index.html" class="card">
-            <img src="assets/whatsapp.png" alt="WhatsApp Chat List" />
-            <span>WhatsApp Chat List</span>
-        </a>
+    <!-- 3 Contact List Search -->
+    <a class="card" href="contact-search/index.html">
+      <img src="assets/contact-search.png" alt="Contact List Search">
+      <p>Contact List Search</p>
+    </a>
 
-        <!-- 5 ▸ Money Splitter -->
+    <!-- 4 WhatsApp Chat List -->
+    <a class="card" href="whatsapp-list/index.html">
+      <img src="assets/whatsapp-list.png" alt="WhatsApp Chat List">
+      <p>WhatsApp Chat List</p>
+    </a>
+
+    <!-- 5 Money Splitwise -->
+    <a href="money-splitwise/index.html" target="_blank">
+        <img src="assets/money-splitwise.png" alt="Money Splitwise">
+        <p>Money Splitwise</p>
+      </a>
+      
+     
 
 
-        <a href="money-splitwise/index.html" class="card">
-            <img src="assets/money-splitwise.png" alt="Text Editor" />
-            <span>Money SplitWise</span>
-        </a>
+    <!-- 6 Resume -->
+    <a class="card" href="resume/index.html">
+      <img src="assets/resume.png" alt="Resume">
+      <p>My Resume</p>
+    </a>
 
-
-
-        <!-- 6 ▸ Resume -->
-        <a href="resume/index.html" class="card">
-            <img src="assets/resume.png" alt="Resume" />
-            <span>My Resume</span>
-        </a>
-    </section>
+  </section>
 </body>
-
 </html>
