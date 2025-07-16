@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WhatsApp Chat List</title>
-
-  <!-- Google Font + Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
-
-  <style>
-    body{font-family:'Roboto',sans-serif}
-  </style>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Money Splitwise</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    </head>
 <body>
   <!-- Header -->
   <header class="text-gray-700 body-font">
@@ -41,59 +39,29 @@
     </div>
   </header>
 
-  <!-- *** original markup below unchanged *** -->
   <div id="container">
-    <div class="container2">
-      <div class="ks-messenger">
-        <div class="ks-discussions">
-          <div class="ks-header">
-            <span class="col-4 text-center"><i class="fas fa-comments" style="color:dodgerblue"></i></span>
-            <span class="col-4 text-center"><i class="fas fa-video" style="color:dodgerblue"></i></span>
-            <span class="col-4 text-center"><i class="fas fa-stream" style="color:dodgerblue"></i></span>
-          </div>
-
-          <div class="bg-gray-200 ks-body ks-scrollable jspScrollable" data-auto-height=""
-               style="height:388px;padding:0;width:339px" tabindex="0">
-            <div class="jspContainer">
-              <div class="jspPane" id="chatbox" style="padding:0;top:0;width:339px"></div>
-              <div class="jspVerticalBar">
-                <div class="jspCap jspCapTop"></div>
-                <div class="jspTrack" style="height:100px">
-                  <div class="jspDrag">
-                    <div class="jspDragTop"></div>
-                    <div class="jspDragBottom"></div>
-                  </div>
-                </div>
-                <div class="jspCap jspCapBottom"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container2 overflow-y-scroll" style="height:500px;padding-top:40px">
-      <span id="temptext" class="block text-center text-xl w-full">
-        <p>Select the Name below and write the message.</p>
-        <p class="mb-5">Click on the button below to send.</p>
-
-        <select id="contactlist" class="w-full border bg-gray-200 rounded px-3 py-1 mt-6 mb-6">
-          <option>Aman</option><option>Anupam</option><option>Priyam</option>
-          <option>Anurag</option><option>Abhijeet</option><option>Dev Prakash</option>
-        </select>
-
-        <input id="message" type="text" placeholder="Enter the Message here"
-               class="w-full bg-gray-400 px-4 py-1 my-6 border rounded-lg text-gray-700 focus:border-green-500">
+    <div id="mynetwork"></div>
+    <div id="container2">
+      <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+  
       </span>
+      <div id="mynetwork2" style="display: none"></div>
     </div>
   </div>
+  <div>
+    <br>
+    <center><p>Enter the Transaction Details</p></center>
+    <center> 
+    <input type='text' id="first" placeholder="Enter the First Person id" class="bg-gray-400 mt-6 mb-6 px-4 py-1 mx-1 border rounded-lg text-gray-700 focus:border-green-500" />
+    <input type='text' id="second" placeholder="Enter the Second Person id" class="bg-gray-400 mt-6 mb-6 px-4 py-1 mx-1 border rounded-lg text-gray-700 focus:border-green-500" />
+    <input type='text' id="amount" placeholder="Enter the Amount" class="bg-gray-400 mt-6 mb-6 px-4 py-1 mx-1 border rounded-lg text-gray-700 focus:border-green-500" /></center>
+    <center><button type="button" class="bg-green-500 text-gray-100 rounded hover:bg-green-400 px-4 py-2 focus:outline-none" id="generate-graph">Submit</button>
+    <br>
+    <button type="button" class="bg-green-500 text-gray-100 rounded hover:bg-green-400 px-4 py-2 focus:outline-none" id="solve">Solve</button>
+    <br>
+    <button type="button" class="bg-green-500 text-gray-100 rounded hover:bg-green-400 px-4 py-2 focus:outline-none" id="reset">Reset</button></center>
+</div>
 
-  <div class="container3 text-center my-4">
-    <button id="send"
-            class="bg-green-500 hover:bg-teal-500 text-gray-900 rounded px-3 py-2 focus:outline-none">
-      Send the Message
-    </button>
-  </div>
 
   <script src="./index.js"></script>
 </body>
